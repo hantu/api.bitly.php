@@ -129,7 +129,7 @@ class Bitly
 	*
 	* @return info about the short url/hash
 	**/
-	function info($in, $keys=null)
+	function info($in)
 	{
 		$request = 'http://api.bit.ly/info?version='.$this->version;
 		
@@ -143,12 +143,6 @@ class Bitly
 		else
 		{
 			$request = $request.'&hash='.$in;
-		}
-		
-		// keys
-		if ($keys != null)
-		{
-			$request = $request.'&keys='.$keys;
 		}
 		
 		$response = $this->process($this->request($request));
