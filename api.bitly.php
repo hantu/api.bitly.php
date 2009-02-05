@@ -5,7 +5,7 @@
 * use of cURL (make sure you have cURL enabled in your PHP installation)
 *
 * Instantiate a new Bitly object:
-* $bitly = new Bitly(loginname, apikey, [version], [type]);
+* $bitly = new Bitly(loginname, apikey, [version]);
 *
 * Returns the shorten Bit.ly URL:
 * $bitly->shorten("http://longurl.com");
