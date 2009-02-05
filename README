@@ -1,1 +1,78 @@
 Simple PHP wrapper for Bit.ly's API
+
+** temporary readme file **
+
+Bit.ly API Responses
+
+/shorten
+
+errorCode: 					int
+errorMessage: 				string
+results: 					array
+	longurl:				array
+		hash:				string
+		shortKeywordUrl: 	string
+		shortUrl:			string
+		userHash:			string
+statusCode:					string
+
+/expand
+
+errorCode:					int
+errorMessage:				string
+results:					
+	hash:					
+		longUrl:			string
+statusCode:					string
+
+/info
+
+errorCode:					int
+errorMessage:				string
+results:					
+	hash:					
+		calais:				
+		contentLength:		string
+		contentType:		string
+		exif:				
+		globalHash:			string
+		hash:				string
+		htmlMetaDescription:string
+		htmlMetaKeywords:	
+		htmlTitle:			string
+		id3:				
+		keywords:			
+		longUrl:			string
+		metacarta:			
+		mirrorUrl:			string
+		surbl:				int
+		thumbnail:
+			large:			string
+			medium:			string
+			small:			string
+		users:
+		version:			int
+statusCode:					string
+
+/stats
+
+errorCode:					int
+errorMessage:				message
+results:					
+	clicks:					int
+	hash:					string
+	referrers:
+	userClicks:				int
+	userHash:				string
+	userReferrers:			
+statusCode:					string
+
+/errors
+
+errorCode:					int
+errorMessage:				string
+results:					
+	errorCode:				int
+	errorMessage:			string
+	statusCode:				string
+statusCode:					string
